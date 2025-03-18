@@ -44,6 +44,54 @@ SecureFileShare is a web application that allows you to securely share your file
    http://localhost:5173
    ```
 
+## Using Docker
+
+### Requirements
+
+- Docker
+- Docker Compose (optional)
+
+### Using Docker Compose (Recommended)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/volkanmirza/SecureFileShare.git
+   cd SecureFileShare
+   ```
+
+2. Build and start the container:
+   ```bash
+   docker-compose up -d
+   ```
+
+3. Access the application in your browser:
+   ```
+   http://localhost:8080
+   ```
+
+### Using Docker directly
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/volkanmirza/SecureFileShare.git
+   cd SecureFileShare
+   ```
+
+2. Build the Docker image:
+   ```bash
+   docker build -t secure-file-share .
+   ```
+
+3. Run the container:
+   ```bash
+   docker run -d -p 8080:80 secure-file-share
+   ```
+
+4. Access the application in your browser:
+   ```
+   http://localhost:8080
+   ```
+
 ## Deployment (Build)
 
 To compile and prepare the application for production:
