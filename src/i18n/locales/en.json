@@ -1,0 +1,56 @@
+{
+  "title": "Secure File Share",
+  "subtitle": "Securely share files with end-to-end encryption",
+  "upload": {
+    "title": "Upload File",
+    "dropzone": "Drag & drop a file here, or click to select",
+    "maxSize": "Maximum file size: 100MB"
+  },
+  "download": {
+    "title": "Download File",
+    "enterToken": "Enter Token",
+    "placeholder": "Enter your file token",
+    "button": "Download File",
+    "downloading": "Downloading...",
+    "complete": "Download complete!"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "1. Secure Upload",
+      "description": "Files are processed using a secure upload protocol with client-side encryption. Each file is chunked and encrypted using AES-256-GCM before transmission."
+    },
+    "step2": {
+      "title": "2. Token Generation",
+      "description": "A cryptographically secure token is generated using a combination of UUID v4 and additional entropy. This token serves as both an access key and decryption key."
+    },
+    "step3": {
+      "title": "3. Secure Download",
+      "description": "Files are streamed during download with real-time decryption. The process uses a secure WebSocket connection for reliable transfer and progress tracking."
+    },
+    "security": {
+      "title": "Security Features",
+      "features": [
+        "AES-256-GCM encryption for all files",
+        "Zero-knowledge encryption architecture",
+        "Secure token generation using CSPRNG",
+        "Automatic file deletion after download",
+        "Rate limiting and DDoS protection"
+      ]
+    },
+    "technical": {
+      "title": "Technical Specifications",
+      "specs": [
+        "Maximum file size: 100MB",
+        "Chunk size: 8MB for optimal streaming",
+        "WebSocket protocol for real-time progress",
+        "Content-addressable storage system",
+        "End-to-end transfer verification"
+      ]
+    },
+    "securityNote": {
+      "title": "Advanced Security Note",
+      "description": "Our system implements a zero-knowledge architecture where files are encrypted before leaving your browser. The server never has access to unencrypted data, and encryption keys are derived from the access token using PBKDF2 key derivation. All temporary data is securely wiped from memory after transfer completion."
+    }
+  }
+}

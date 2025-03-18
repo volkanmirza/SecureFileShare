@@ -1,0 +1,56 @@
+{
+  "title": "Güvenli Dosya Paylaşımı",
+  "subtitle": "Uçtan uca şifreleme ile güvenli dosya paylaşımı",
+  "upload": {
+    "title": "Dosya Yükle",
+    "dropzone": "Dosyayı sürükleyip bırakın veya tıklayarak seçin",
+    "maxSize": "Maksimum dosya boyutu: 100MB"
+  },
+  "download": {
+    "title": "Dosya İndir",
+    "enterToken": "Token Girin",
+    "placeholder": "Dosya tokenınızı girin",
+    "button": "Dosyayı İndir",
+    "downloading": "İndiriliyor...",
+    "complete": "İndirme tamamlandı!"
+  },
+  "howItWorks": {
+    "title": "Nasıl Çalışır",
+    "step1": {
+      "title": "1. Güvenli Yükleme",
+      "description": "Dosyalar, istemci tarafında şifreleme ile güvenli bir yükleme protokolü kullanılarak işlenir. Her dosya, iletimden önce AES-256-GCM kullanılarak parçalanır ve şifrelenir."
+    },
+    "step2": {
+      "title": "2. Token Oluşturma",
+      "description": "UUID v4 ve ek entropi kombinasyonu kullanılarak kriptografik olarak güvenli bir token oluşturulur. Bu token hem erişim anahtarı hem de şifre çözme anahtarı olarak görev yapar."
+    },
+    "step3": {
+      "title": "3. Güvenli İndirme",
+      "description": "Dosyalar, gerçek zamanlı şifre çözme ile akış halinde indirilir. Süreç, güvenilir transfer ve ilerleme takibi için güvenli bir WebSocket bağlantısı kullanır."
+    },
+    "security": {
+      "title": "Güvenlik Özellikleri",
+      "features": [
+        "Tüm dosyalar için AES-256-GCM şifreleme",
+        "Sıfır bilgi şifreleme mimarisi",
+        "CSPRNG kullanarak güvenli token oluşturma",
+        "İndirmeden sonra otomatik dosya silme",
+        "Hız sınırlama ve DDoS koruması"
+      ]
+    },
+    "technical": {
+      "title": "Teknik Özellikler",
+      "specs": [
+        "Maksimum dosya boyutu: 100MB",
+        "Optimal akış için 8MB parça boyutu",
+        "Gerçek zamanlı ilerleme için WebSocket protokolü",
+        "İçerik adreslenebilir depolama sistemi",
+        "Uçtan uca transfer doğrulama"
+      ]
+    },
+    "securityNote": {
+      "title": "Gelişmiş Güvenlik Notu",
+      "description": "Sistemimiz, dosyaların tarayıcınızdan ayrılmadan önce şifrelendiği sıfır bilgi mimarisi uygular. Sunucu hiçbir zaman şifrelenmemiş verilere erişemez ve şifreleme anahtarları PBKDF2 anahtar türetme kullanılarak erişim tokenından türetilir. Tüm geçici veriler, transfer tamamlandıktan sonra bellekten güvenli bir şekilde silinir."
+    }
+  }
+}
