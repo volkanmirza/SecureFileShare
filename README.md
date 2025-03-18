@@ -21,7 +21,7 @@ SecureFileShare is a web application that allows you to securely share your file
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/SecureFileShare.git
+   git clone https://github.com/volkanmirza/SecureFileShare.git
    cd SecureFileShare
    ```
 
